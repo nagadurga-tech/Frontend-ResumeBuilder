@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-white via-green-200/60 to-white">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-white via-blue-200/60 to-white">
       <form
         onSubmit={handleSubmit}
         className="sm:w-[350px] w-full text-center border border-gray-300/60 rounded-2xl px-8 bg-white"
@@ -94,15 +94,15 @@ const Login = () => {
           />
         </div>
 
-        <div className="mt-4 text-left text-blue-500">
+        {/* <div className="mt-4 text-left text-blue-500">
           <button type="reset" className="text-sm">
             Forgot password?
           </button>
-        </div>
+        </div> */}
 
         <button
           type="submit"
-          className="mt-3 w-full h-11 rounded-full text-white bg-green-500 hover:opacity-90"
+          className="mt-3 w-full h-11 rounded-full text-white bg-blue-500 hover:opacity-90"
         >
           {state === "login" ? "Login" : "Sign Up"}
         </button>
